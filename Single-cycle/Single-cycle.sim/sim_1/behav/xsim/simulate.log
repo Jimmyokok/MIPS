@@ -1,0 +1,63 @@
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+========== Test: ad hoc ==========
+WARNING: file D:/Vivado/Projects/Single-cycle/benchtest/ad hoc/ad hoc.data could not be opened
+========== In init ==========
+         19 instructions in total
+========== In runtime checker ==========
+successfully pass runtime checker
+========== In memory judge ==========
+successfully pass memory judge
+[OK] ad hoc
+
+========== Test: factorial ==========
+WARNING: file D:/Vivado/Projects/Single-cycle/benchtest/factorial/factorial.data could not be opened
+========== In init ==========
+         25 instructions in total
+========== In runtime checker ==========
+successfully pass runtime checker
+========== In memory judge ==========
+successfully pass memory judge
+[OK] factorial
+
+========== Test: bubble sort ==========
+========== In init ==========
+         18 instructions in total
+========== In runtime checker ==========
+successfully pass runtime checker
+========== In memory judge ==========
+successfully pass memory judge
+[OK] bubble sort
+
+========== Test: gcd ==========
+WARNING: file D:/Vivado/Projects/Single-cycle/benchtest/gcd/gcd.data could not be opened
+========== In init ==========
+         15 instructions in total
+========== In runtime checker ==========
+successfully pass runtime checker
+========== In memory judge ==========
+successfully pass memory judge
+[OK] gcd
+
+========== Test: quick multiply ==========
+WARNING: file D:/Vivado/Projects/Single-cycle/benchtest/quick multiply/quick multiply.data could not be opened
+========== In init ==========
+         14 instructions in total
+========== In runtime checker ==========
+successfully pass runtime checker
+========== In memory judge ==========
+successfully pass memory judge
+[OK] quick multiply
+
+========== Test: bisection ==========
+========== In init ==========
+         18 instructions in total
+========== In runtime checker ==========
+successfully pass runtime checker
+========== In memory judge ==========
+successfully pass memory judge
+[OK] bisection
+
+[Done]
+
+$finish called at time : 138740 ns : File "D:/Vivado/Projects/Single-cycle/benchtest/cpu_tb.sv" Line 160

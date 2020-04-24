@@ -1,0 +1,27 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+D:/Vivado/Projects/Pipeline/Pipeline.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+D:/Vivado/Projects/Pipeline/Pipeline.srcs/sources_1/new/adder.sv,1583888578,systemVerilog,,D:/Vivado/Projects/Pipeline/Pipeline.srcs/sources_1/new/alu.sv,,adder,,,,,,,,
+D:/Vivado/Projects/Pipeline/Pipeline.srcs/sources_1/new/alu.sv,1586588433,systemVerilog,,D:/Vivado/Projects/Pipeline/Pipeline.srcs/sources_1/new/aludecoder.sv,,alu,,,,,,,,
+D:/Vivado/Projects/Pipeline/Pipeline.srcs/sources_1/new/aludecoder.sv,1584359828,systemVerilog,,D:/Vivado/Projects/Pipeline/Pipeline.srcs/sources_1/new/controller.sv,,aludecoder,,,,,,,,
+D:/Vivado/Projects/Pipeline/Pipeline.srcs/sources_1/new/controller.sv,1586611153,systemVerilog,,D:/Vivado/Projects/Pipeline/Pipeline.srcs/sources_1/new/datapath.sv,,controller,,,,,,,,
+D:/Vivado/Projects/Pipeline/Pipeline.srcs/sources_1/new/datapath.sv,1586831879,systemVerilog,,D:/Vivado/Projects/Pipeline/Pipeline.srcs/sources_1/new/decoder.sv,,datapath,,,,,,,,
+D:/Vivado/Projects/Pipeline/Pipeline.srcs/sources_1/new/decoder.sv,1586590707,systemVerilog,,D:/Vivado/Projects/Pipeline/Pipeline.srcs/sources_1/new/dmem.sv,,decoder,,,,,,,,
+D:/Vivado/Projects/Pipeline/Pipeline.srcs/sources_1/new/dmem.sv,1585985683,systemVerilog,,D:/Vivado/Projects/Pipeline/Pipeline.srcs/sources_1/new/eqcmp.sv,,dmem,,,,,,,,
+D:/Vivado/Projects/Pipeline/Pipeline.srcs/sources_1/new/eqcmp.sv,1586584822,systemVerilog,,D:/Vivado/Projects/Pipeline/Pipeline.srcs/sources_1/new/flopr.sv,,eqcmp,,,,,,,,
+D:/Vivado/Projects/Pipeline/Pipeline.srcs/sources_1/new/flopr.sv,1586584403,systemVerilog,,D:/Vivado/Projects/Pipeline/Pipeline.srcs/sources_1/new/hazardunit.sv,,flopr,,,,,,,,
+D:/Vivado/Projects/Pipeline/Pipeline.srcs/sources_1/new/hazardunit.sv,1586831991,systemVerilog,,D:/Vivado/Projects/Pipeline/Pipeline.srcs/sources_1/new/imem.sv,,hazardunit,,,,,,,,
+D:/Vivado/Projects/Pipeline/Pipeline.srcs/sources_1/new/imem.sv,1584351902,systemVerilog,,D:/Vivado/Projects/Pipeline/Pipeline.srcs/sources_1/new/mips.sv,,imem,,,,,,,,
+D:/Vivado/Projects/Pipeline/Pipeline.srcs/sources_1/new/mips.sv,1586612491,systemVerilog,,D:/Vivado/Projects/Pipeline/Pipeline.srcs/sources_1/new/mux21.sv,,mips,,,,,,,,
+D:/Vivado/Projects/Pipeline/Pipeline.srcs/sources_1/new/mux21.sv,1583886862,systemVerilog,,D:/Vivado/Projects/Pipeline/Pipeline.srcs/sources_1/new/mux3.sv,,mux21,,,,,,,,
+D:/Vivado/Projects/Pipeline/Pipeline.srcs/sources_1/new/mux3.sv,1586601473,systemVerilog,,D:/Vivado/Projects/Pipeline/Pipeline.srcs/sources_1/new/prd.sv,,mux3,,,,,,,,
+D:/Vivado/Projects/Pipeline/Pipeline.srcs/sources_1/new/prd.sv,1586617178,systemVerilog,,D:/Vivado/Projects/Pipeline/Pipeline.srcs/sources_1/new/pre.sv,,prd,,,,,,,,
+D:/Vivado/Projects/Pipeline/Pipeline.srcs/sources_1/new/pre.sv,1586611401,systemVerilog,,D:/Vivado/Projects/Pipeline/Pipeline.srcs/sources_1/new/prm.sv,,pre,,,,,,,,
+D:/Vivado/Projects/Pipeline/Pipeline.srcs/sources_1/new/prm.sv,1586611552,systemVerilog,,D:/Vivado/Projects/Pipeline/Pipeline.srcs/sources_1/new/prw.sv,,prm,,,,,,,,
+D:/Vivado/Projects/Pipeline/Pipeline.srcs/sources_1/new/prw.sv,1586611592,systemVerilog,,D:/Vivado/Projects/Pipeline/Pipeline.srcs/sources_1/new/regfile.sv,,prw,,,,,,,,
+D:/Vivado/Projects/Pipeline/Pipeline.srcs/sources_1/new/regfile.sv,1586618516,systemVerilog,,D:/Vivado/Projects/Pipeline/Pipeline.srcs/sources_1/new/shift2.sv,,regfile,,,,,,,,
+D:/Vivado/Projects/Pipeline/Pipeline.srcs/sources_1/new/shift2.sv,1583887022,systemVerilog,,D:/Vivado/Projects/Pipeline/Pipeline.srcs/sources_1/new/signext.sv,,shift2,,,,,,,,
+D:/Vivado/Projects/Pipeline/Pipeline.srcs/sources_1/new/signext.sv,1583887828,systemVerilog,,D:/Vivado/Projects/Pipeline/benchtest/cpu_tb.sv,,signext,,,,,,,,
+D:/Vivado/Projects/Pipeline/benchtest/cpu_tb.sv,1586612741,systemVerilog,,,,cpu_tb,,,,,,,,

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="cpu_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="cpu_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="138121250000fs"></ZoomStartTime>
+      <ZoomEndTime time="138863750001fs"></ZoomEndTime>
+      <Cursor1Time time="138740000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="145"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="24" />
+   <wave_markers>
+      <marker time="3700000000" label="" />
+      <marker time="4220000000" label="" />
+      <marker time="134910000000" label="" />
+   </wave_markers>
+   <wvobject fp_name="/cpu_tb/cpu_clk" type="logic">
+      <obj_property name="ElementShortName">cpu_clk</obj_property>
+      <obj_property name="ObjectShortName">cpu_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/pc" type="array">
+      <obj_property name="ElementShortName">pc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/instr" type="array">
+      <obj_property name="ElementShortName">instr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/pc_finished" type="array">
+      <obj_property name="ElementShortName">pc_finished[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_finished[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/mips/data/regfile/regfile" type="array">
+      <obj_property name="ElementShortName">regfile[31:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">regfile[31:0][31:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/dmem/RAM" type="array">
+      <obj_property name="ElementShortName">RAM[63:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">RAM[63:0][31:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/mips/cont/op" type="array">
+      <obj_property name="ElementShortName">op[5:0]</obj_property>
+      <obj_property name="ObjectShortName">op[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/mips/cont/funct" type="array">
+      <obj_property name="ElementShortName">funct[5:0]</obj_property>
+      <obj_property name="ObjectShortName">funct[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/mips/cont/zero" type="logic">
+      <obj_property name="ElementShortName">zero</obj_property>
+      <obj_property name="ObjectShortName">zero</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/mips/cont/jump" type="array">
+      <obj_property name="ElementShortName">jump[1:0]</obj_property>
+      <obj_property name="ObjectShortName">jump[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/mips/cont/jr" type="logic">
+      <obj_property name="ElementShortName">jr</obj_property>
+      <obj_property name="ObjectShortName">jr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/mips/cont/pcsrc" type="logic">
+      <obj_property name="ElementShortName">pcsrc</obj_property>
+      <obj_property name="ObjectShortName">pcsrc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/mips/cont/alucont" type="array">
+      <obj_property name="ElementShortName">alucont[2:0]</obj_property>
+      <obj_property name="ObjectShortName">alucont[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/mips/cont/aluop" type="array">
+      <obj_property name="ElementShortName">aluop[2:0]</obj_property>
+      <obj_property name="ObjectShortName">aluop[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/mips/cont/branch" type="array">
+      <obj_property name="ElementShortName">branch[1:0]</obj_property>
+      <obj_property name="ObjectShortName">branch[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/mips/data/pcplus4" type="array">
+      <obj_property name="ElementShortName">pcplus4[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pcplus4[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/mips/data/pcbranch" type="array">
+      <obj_property name="ElementShortName">pcbranch[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pcbranch[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/mips/data/pcbranchsel" type="array">
+      <obj_property name="ElementShortName">pcbranchsel[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pcbranchsel[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/mips/data/pcjump" type="array">
+      <obj_property name="ElementShortName">pcjump[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pcjump[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/mips/data/pcjumpsel" type="array">
+      <obj_property name="ElementShortName">pcjumpsel[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pcjumpsel[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/mips/data/pcjr" type="array">
+      <obj_property name="ElementShortName">pcjr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pcjr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/mips/data/nxtpc" type="array">
+      <obj_property name="ElementShortName">nxtpc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">nxtpc[31:0]</obj_property>
+   </wvobject>
+</wave_config>
