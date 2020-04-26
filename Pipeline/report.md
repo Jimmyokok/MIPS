@@ -80,8 +80,10 @@ if (~mips.dp.flushD & ~mips.hazard.stallD)
 
     ```verilog
     assign branchstall= br & (((writeregE == rsD) | (writeregE == rtD)) | (memtoregM & ((writeregM==rsD)|(writeregM==rtD))));
-    assign flushD=(pcsrc|jr|jump)&(~branchstall);
+    assign flushD=(pcsrc|jr|jump)&(~branchstall)&~lwstall);
     ```
+  
+  - **~lwstall**非常重要，虽然不加也能通过全部测试但是实际上是错误的。
   
 ### 2.1.3. 改进
 

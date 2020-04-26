@@ -33,7 +33,7 @@ assign stallD=lwstall|branchstall;
 assign flushE=lwstall|branchstall;
 assign lwstall=memtoregE & ((rsD==rtE) | (rtD==rtE));
 assign branchstall= br & ((memtoregM & ((writeregM==rsD)|(writeregM==rtD))));
-assign flushD=(pcsrc|jr|jump)&(~branchstall);
+assign flushD=(pcsrc|jr|jump)&(~branchstall)&(~lwstall);
 assign forwardAD=(rsD!=0)&(rsD==writeregE)&regwriteE;
 assign forwardBD=(rtD!=0)&(rtD==writeregE)&regwriteE;
 assign forwardAE=(((rsE!=0)&(rsE==writeregM)&regwriteM))?2'b10:((((rsE!=0)&(rsE==writeregW)&regwriteW))?2'b01:2'b00);
