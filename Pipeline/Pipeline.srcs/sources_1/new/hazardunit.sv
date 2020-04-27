@@ -27,15 +27,15 @@ input logic [4:0]writeregE,writeregM,writeregW,
 output logic stallF,stallD,flushD,flushE,forwardAD,forwardBD,[1:0]forwardAE,forwardBE
     );
 logic br,lwstall,branchstall;
-assign br=(branch!=0);
+assign br=(branch!=0)|jr;
 assign stallF=lwstall|branchstall;
 assign stallD=lwstall|branchstall;
 assign flushE=lwstall|branchstall;
 assign lwstall=memtoregE & ((rsD==rtE) | (rtD==rtE));
-assign branchstall= br & ((memtoregM & ((writeregM==rsD)|(writeregM==rtD))));
+assign branchstall= br & ((regwriteM &((writeregM==rsD)|(writeregM==rtD))));
 assign flushD=(pcsrc|jr|jump)&(~branchstall)&(~lwstall);
-assign forwardAD=(rsD!=0)&(rsD==writeregE)&regwriteE;
-assign forwardBD=(rtD!=0)&(rtD==writeregE)&regwriteE;
+assign forwardAD=(rsD!=0)&(((rsD==writeregE)&regwriteE));
+assign forwardBD=(rtD!=0)&(((rtD==writeregE)&regwriteE));
 assign forwardAE=(((rsE!=0)&(rsE==writeregM)&regwriteM))?2'b10:((((rsE!=0)&(rsE==writeregW)&regwriteW))?2'b01:2'b00);
 assign forwardBE=(((rtE!=0)&(rtE==writeregM)&regwriteM))?2'b10:((((rtE!=0)&(rtE==writeregW)&regwriteW))?2'b01:2'b00);
 endmodule

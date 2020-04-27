@@ -179,6 +179,12 @@ begin
     grader("gcd");
     grader("quick multiply");
     grader("bisection");
+    grader("xi");
+    grader("lw-br");
+    grader("en & clear");
+    grader("i-type");
+    grader("mutual recursion");
+    grader("testjr");
 	$display("[Done]\n");
     $display("CPI = %0f\n", $bitstoreal(cycle) / $bitstoreal(instr_count));
 	`ifdef checking

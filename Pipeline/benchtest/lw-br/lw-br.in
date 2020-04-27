@@ -1,0 +1,11 @@
+add $sp, $0, $0
+and $t1, $t1, $0
+Again:
+	addi $t1, $t1, 6
+	lw $t0, 0($sp)
+	beq $t0, $t1, Again
+sw $t1, 4($0)
+nop
+nop
+nop
+nop

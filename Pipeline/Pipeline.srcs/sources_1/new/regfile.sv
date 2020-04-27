@@ -30,13 +30,11 @@ input logic [31:0]WD3,
 input logic [31:0]jal_in,
 input logic jal_sig,
 output logic [31:0]RD1,
-output logic [31:0]RD2,
-output logic [31:0]jal_out
+output logic [31:0]RD2
     );
 logic [31:0]regfile[31:0];
 assign RD1=(A1?regfile[A1]:0);
 assign RD2=(A2?regfile[A2]:0);
-assign jal_out=regfile[31];
 always @(negedge clk)
     begin
         if(reset)

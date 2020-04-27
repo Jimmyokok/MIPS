@@ -44,24 +44,24 @@ output logic [4:0]writeregE,writeregM,writeregW
 logic [31:0]resultW;
 //fetch
 logic[31:0]instrD;
-logic [31:0]pcplus4,pcbranch,pcbranchsel,pcjump,pcjumpsel,pcjr,nxtpc;
+logic [31:0]pcplus4,pcbranch,pcbranchsel,pcjump,pcjumpsel,brRD1,nxtpc;
 flopr flopr(clk,~stallF,reset,nxtpc,pc);
 assign pcjump={pcplus4[31:28], instrD[25:0], 2'b00};
 mux21 pcbranchmux(pcplus4,pcbranch,pcsrc,pcbranchsel);
 mux21 pcjumpmux(pcbranchsel,pcjump,jump[1],pcjumpsel);
-mux21 pcjrmux(pcjumpsel,pcjr,jr,nxtpc);
+mux21 pcjrmux(pcjumpsel,brRD1,jr,nxtpc);
 adder pcplus4adder(pc,32'b100,pcplus4);
 //decode
 logic[31:0]pcplus4D;
 logic[31:0]RD1,RD2;
-logic[31:0]brRD1,brRD2;
+logic[31:0]brRD2;
 logic [4:0]rdD;
 logic [31:0]signimm,signimmshifted;
 logic [31:0]aluresult;
 prd prd(clk,~stallD,flushD,instr,pcplus4,instrD,pcplus4D);
 assign op=instrD[31:26];
 assign funct=instrD[5:0];
-regfile regfile(clk,reset,regwriteW,instrD[25:21],instrD[20:16],writeregW,resultW,pcplus4D,jump[0],RD1,RD2,pcjr);
+regfile regfile(clk,reset,regwriteW,instrD[25:21],instrD[20:16],writeregW,resultW,pcplus4D,jump[0],RD1,RD2);
 signext signext(instrD[15:0],extmethod,signimm);
 shift2 shift2(signimm,signimmshifted);
 adder pcbranchadder(signimmshifted,pcplus4D,pcbranch);
